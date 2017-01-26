@@ -16,9 +16,19 @@ body {
      padding: 20px;
 }
 
+
+img {
+     width: 100%;
+}
+
+
 .jumbotron {
 	position: relative;
 	background: none;
+}
+
+.jumbotron p.active {
+     color: #1f6ddd;
 }
 
 .jumbotron:after {

@@ -11,12 +11,29 @@ $(document).ready(function() {
 function initializePage() {
 	$("#testjs").click(function(e) {
 		$('.jumbotron h1').text("Javascript is connected");
+		$('#testjs').text("Please wait");
+		$(".jumbotron p").toggleClass("active");
+		$("jumbotron").hide();
+		alert("oh hey");
 	});
+
 
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
 }
 
+
+function animatePage(){
+	$('#css_anime').click(function(){
+		alert("oh hey");
+	  $('#fade_paragraph').animate({
+	    opacity: 0.25,
+	    left: "+=50",
+	    height: "toggle"
+	  }, 1000);
+	});
+
+}
 
 function projectClick(e){
 	e.preventDefault(); 
